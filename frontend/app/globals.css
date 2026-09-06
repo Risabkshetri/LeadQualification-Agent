@@ -1,0 +1,55 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --color-accent: #FF6600;
+  --color-accent-soft: #FFF0E6;
+  
+  --color-hot: #FF6600;
+  --color-hot-bg: #FFF0E6;
+  --color-warm: #F0A500;
+  --color-warm-bg: #FFF8E6;
+  --color-cold: #2563EB;
+  --color-cold-bg: #EFF6FF;
+  --color-unqualified: #6B6B6B;
+  --color-unqualified-bg: #F5F5F5;
+
+  --color-background: #ffffff;
+  --color-foreground: #111111;
+  --color-surface: #F5F5F5;
+  --color-border: #E5E5E5;
+  --color-text-primary: #111111;
+  --color-text-muted: #6B6B6B;
+
+  --font-sans: "Inter", Arial, Helvetica, sans-serif;
+  
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+  --radius-xl: 0px;
+  --radius-2xl: 0px;
+  --radius-3xl: 0px;
+  --radius-full: 0px;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #111111;
+  --color-bg: #FFFFFF;
+  --color-surface: #F5F5F5;
+  --color-border: #E5E5E5;
+  --color-text-primary: #111111;
+  --color-text-muted: #6B6B6B;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+/* Ensure completely sharp edges */
+* {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
